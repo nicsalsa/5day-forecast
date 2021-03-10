@@ -8,33 +8,52 @@ Wednesday March 10, 2021
 
 ### Location of deployed application
 
-If applicable, please provide the url where we can find and interact with your running application.
+[5 Day Forecast](https://nicsalsa.github.io/5day-forecast/)
 
 ### Time spent
 
-How much time did you spend on the assignment? Normally, this is expressed in hours.
+Roughly 6 hours
 
 ### Assumptions made
 
-Use this section to tell us about any assumptions that you made when creating your solution.
+I assumed that with a weather app, it is important to see the current weather, the high and low temperature for the day as well as the ability to look ahead and see what the temperature is for the rest of the week. In order to achieve this, it was necessary to work with libraries like date-fns.org to properly format and manipulate time and dates in a browser. 
 
 ### Shortcuts/Compromises made
 
-If applicable. Did you do something that you feel could have been done better in a real-world application? Please
-let us know.
+Typically, I would use [Emotion.sh](https://www.npmjs.com/package/@emotion/styled) and [Theme UI](https://theme-ui.com/) to organize my css and style components. In this case, and for purposes of time, I chose to globally style in the App.css file.
 
 ### Stretch goals attempted
 
-If applicable, use this area to tell us what stretch goals you attempted. What went well? What do you wish you
-could have done better? If you didn't attempt any of the stretch goals, feel free to let us know why.
+Stretch goals attempted: 
+
+- [x] Create a responsive version: 
+The page is responsive in mobile and uses media queries for css and a custom hook, useWindowSize, to conditionally render jsx.
+
+- [x] Add a feature to explore the weather in other cities
+The user is able to enter a different city in the input as well as choose a unit of measurement to measure the temperature in either degrees celsius or fahrenheit and then the submit triggers another api fetch with the appropriate parameters. 
+I could have improved on the reactivity of the component, in making it faster, however, I didn't want to sacrifice too many requests to the API, despite adding a debounce to slow the amount of times requests were made.
+
+- [x] Deploy assignment somewhere and include the link in README 
+The site is deployed on github pages: [5 Day Forecast](https://nicsalsa.github.io/5day-forecast/)
+
 
 ### Instructions to run assignment locally
 
-If applicable, please provide us with the necessary instructions to run your solution.
+To run 5 day forecast locally:
+```
+yarn install
+yarn start
+```
 
 ### What did you not include in your solution that you want us to know about?
 
-Were you short on time and not able to include something that you want us to know
-about? Please list it here so that we know that you considered it.
+Stretch goals I wanted to attempt:
+- [ ] change background photo based on temperature. I have the photos selected and added to assets folder, however, I ran out of time and chose to descope this part of the plan.
+- [ ] Switch view from future hourly forecast to summary of daily future forecast.
+- [ ] Incorporate animations
+- [ ] Style Inputs better
+- [ ] Add autocomplete to city input
+- [ ] More form validations: better error handling if incorrect city is inputted
 
 ### Other information about your submission that you feel it's important that we know if applicable.
+This was super fun to build!
