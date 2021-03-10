@@ -16,7 +16,6 @@ function App() {
   const [unit, setUnit] = useState("metric")
   const [dates, setDates] = useState([]);
   const size = useWindowSize();
-  console.log("size", size);
   useEffect(
     () => {
       const uniqueDates = [...new Set(forecast.list?.map((reading) => format(new Date(reading.dt_txt), 'MMM dd yyyy')))];
