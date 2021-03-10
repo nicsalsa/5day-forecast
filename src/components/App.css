@@ -1,21 +1,87 @@
-.App {
-  text-align: center;
+/* --- General styles begins --- */
+html {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  font-size: 1rem;
+}
+h1, h2{
+  line-height: 0;
+  color: white;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.fixed {
+  position: fixed;
+}
+.fixed--responsive {
+  position: static;
+  color: white;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column!important;
+  justify-content: center;
+  align-items: center;;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row!important;
+  justify-content: center;
+  align-items: center;;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 950px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .App {
+    text-align: center;
+    width: 100%;
+    background-image: url("../assets/weatherImgs/cottonCandySky.jpg");
+    margin: 0;
+    background-size: cover;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+  }
+  .main {
+    width: 100%;
   }
 }
-
+/* --- General styles ends --- */
+/* --- Header styles begins --- */
+.App {
+  text-align: center;
+  width: 100%;
+  background-image: url("../assets/weatherImgs/cottonCandySky.jpg");
+  margin: 0;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: transparent;
+  width: 50%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,16 +89,108 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* --- Header styles ends --- */
+/* --- Main styles begins --- */
+.main {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main__container {
+  width: 100%;
+}
+/* --- Main styles ends --- */
+/* --- FORM STYLES BEGINS ---  */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formContainer label {
+  padding-right: 5px;
+  text-align: left;
 }
+.input_container {
+  padding-bottom: 10px;
+  width: 100%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+input[type=submit] {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  transition: 1s ease;
+  background-color: white;
+  color: black;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* --- FORM STYLES ENDS --- */
+.weatherBox {
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255, 0.4);
+  border-radius: 5px;
+}
+.weatherBox__date {
+  align-self: flex-start;
+}
+.weatherBox__items {
+  align-items: flex-start;
+  width: 100%;
+}
+.weatherBox__items--hourly {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.weatherBox__hourly--container {
+  width: 100%;
+  background: #906B56;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.weatherBox__hourly {
+  align-items: flex-start;
+}
+
+/* ===== ERROR STATES ===== */
+.error {
+  max-width: 800px;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #E8E1DA;
+  border-radius: 5px;
+}
+
+
+
