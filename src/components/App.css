@@ -60,11 +60,12 @@ h1, h2{
     background-image: url("../assets/weatherImgs/cottonCandySky.jpg");
     margin: 0;
     background-size: cover;
-    /* height: 100vh; */
-    /* overflow-y: scroll; */
   }
   .main {
     width: 100%;
+  }
+  input[type=submit] {
+    padding: 8px!important;
   }
 }
 /* --- General styles ends --- */
