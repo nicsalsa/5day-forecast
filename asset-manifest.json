@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/5day-forecast/static/css/main.2bc102c1.chunk.css",
+    "main.js": "/5day-forecast/static/js/main.52e56227.chunk.js",
+    "main.js.map": "/5day-forecast/static/js/main.52e56227.chunk.js.map",
+    "runtime-main.js": "/5day-forecast/static/js/runtime-main.39ef409c.js",
+    "runtime-main.js.map": "/5day-forecast/static/js/runtime-main.39ef409c.js.map",
+    "static/js/2.63a77940.chunk.js": "/5day-forecast/static/js/2.63a77940.chunk.js",
+    "static/js/2.63a77940.chunk.js.map": "/5day-forecast/static/js/2.63a77940.chunk.js.map",
+    "static/js/3.7ae08663.chunk.js": "/5day-forecast/static/js/3.7ae08663.chunk.js",
+    "static/js/3.7ae08663.chunk.js.map": "/5day-forecast/static/js/3.7ae08663.chunk.js.map",
+    "index.html": "/5day-forecast/index.html",
+    "static/css/main.2bc102c1.chunk.css.map": "/5day-forecast/static/css/main.2bc102c1.chunk.css.map",
+    "static/js/2.63a77940.chunk.js.LICENSE.txt": "/5day-forecast/static/js/2.63a77940.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/5day-forecast/static/media/cottonCandySky.e3d3c2d1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39ef409c.js",
+    "static/js/2.63a77940.chunk.js",
+    "static/css/main.2bc102c1.chunk.css",
+    "static/js/main.52e56227.chunk.js"
+  ]
+}
